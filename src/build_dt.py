@@ -1,6 +1,3 @@
-"""Sadaf Khan, LING572, HW2, 01/18/2022. Builds a decision tree from the training tree, classifies the training and
-test data, and calculates the accuracy."""
-
 # INITIALIZING
 import os
 import sys
@@ -155,7 +152,7 @@ def builder(instances, depth):
     ig, bp = decider(instances)
 
     # recursive case; as long as ig is high enough and tree is short enough, keep splitting
-    if ig >= min_gain & depth < max_depth:
+    if (ig >= min_gain & depth < max_depth):
         depth += 1
         trues, falses = breaker(instances, bp)
 

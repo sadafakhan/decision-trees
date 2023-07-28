@@ -1,3 +1,3 @@
 #!/bin/sh
 
-python3 ./build_dt.py $@
+python3 src/build_dt.py $@
